@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    padding: 100px;
+}
+
+#username {
+    font-size: 20px;
+    /* color: red; */
+    /* caret-color: blueviolet; */
+    border: 2px solid seagreen;
+    border-radius: 6px;
+    outline: none;
+    margin-bottom: 25px;
+    padding: 10px;
+    display: block;
+}
+
+#username::placeholder {
+    color: seagreen;
+    /* transition: opacity 5s; */
+}
+
+/* #username:focus {
+    border: 2px solid seagreen;
+    outline: none;
+} */
+
+#username:focus::placeholder {
+    visibility: hidden;
+    /* opacity: 0; */
+}
+
+#username:-webkit-autofill,
+#username:-webkit-autofill:focus,
+#username:-webkit-autofill:hover {
+    -webkit-text-fill-color: white !important;
+    -webkit-box-shadow: 0 0 0 1000px #000 inset !important;
+    /* zoom: 2; */
+}
+
+#password {
+    font-size: 20px;
+    /* color: yellow; */
+    /* caret-color: red; */
+    border: 2px solid salmon;
+    border-radius: 6px;
+    outline: none;
+    margin-bottom: 25px;
+    padding: 10px;
+    /* display: block; */
+}
+
+#password::placeholder {
+    color: salmon;
+}
+
+#password:focus::placeholder {
+    visibility: hidden;
+}
+
+#toggle-password {
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    border: 2px solid salmon;
+    border-radius: 4px;
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+}
+
+#toggle-password:checked {
+    background-color: salmon;
+}
+
+#toggle-password::before {
+    content: "✔";
+    font-size: 16px;
+    color: white;
+    display: none;
+    position: absolute;
+    top: -3px;
+    left: 2px;
+}
+
+#toggle-password:checked::before {
+    display: initial;
+}
+
+#toggle-password:hover {
+    border-color: rgba(250, 128, 114, 0.6);
+}
+
+#password-2 {
+    font-size: 20px;
+    border: 2px solid sienna;
+    border-radius: 6px;
+    outline: none;
+    margin-bottom: 25px;
+    padding: 10px;
+}
+
+#password-2::placeholder {
+    color: sienna
+}
+
+#password-2:focus::placeholder {
+    visibility: hidden;
+}
+
+#toggle-password-2 {
+    font-size: 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+#message {
+    font-size: 20px;
+    /* caret-color: darkorchid; */
+    border: 2px solid darkorchid;
+    border-radius: 6px;
+    outline: none;
+    margin-bottom: 25px;
+    padding: 10px;
+}
+
+#message::placeholder {
+    color: darkorchid;
+}
+
+#message:focus::placeholder {
+    visibility: hidden;
+}
